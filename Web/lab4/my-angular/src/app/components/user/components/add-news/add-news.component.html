@@ -1,0 +1,18 @@
+<section class = "add_news_section">
+  <p class = "main_header">Добавить новость</p>
+  <form [formGroup]="addNewsForm" (ngSubmit)="submitNews()">
+  <div class = "text_div">
+    <textarea rows = "10" formControlName="news_content"
+            id="news_content" placeholder="Текст новости">
+    </textarea>
+  </div>
+    <div class = "text_div">
+      <button [disabled]="addNewsForm.invalid" class = "add_news_btn">Ок</button>
+    </div>
+    <div class = "text_div">
+      <a href = "/user/timeline">
+        <button class="deny_change_btn" type = "button">Отмена</button>
+      </a>
+    </div>
+  </form>
+</section>

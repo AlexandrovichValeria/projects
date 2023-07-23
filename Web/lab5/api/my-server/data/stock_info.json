@@ -1,0 +1,42 @@
+[
+  {
+    "title": "AAPL",
+    "company_name": "Apple",
+    "exchange_rate": 100
+  },
+  {
+    "title": "SBUX",
+    "company_name": "Starbucks",
+    "exchange_rate": 100
+  },
+  {
+    "title": "MSFT",
+    "company_name": "Microsoft",
+    "exchange_rate": 100
+  },
+  {
+    "title": "CSCO",
+    "company_name": "Cisco Systems",
+    "exchange_rate": 100
+  },
+  {
+    "title": "QCOM",
+    "company_name": "QUALCOMM",
+    "exchange_rate": 100
+  },
+  {
+    "title": "AMZN",
+    "company_name": "Amazon.com",
+    "exchange_rate": 100
+  },
+  {
+    "title": "TSLA",
+    "company_name": "Tesla",
+    "exchange_rate": 100
+  },
+  {
+    "title": "AMD",
+    "company_name": "Advanced Micro Devices",
+    "exchange_rate": 100
+  }
+]

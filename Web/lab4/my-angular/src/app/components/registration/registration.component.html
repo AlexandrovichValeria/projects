@@ -1,0 +1,48 @@
+<section class="registration">
+  <div class="container">
+    <div class="header">
+      <h2>Регистрация</h2>
+    </div>
+    <form [formGroup]="regForm" (ngSubmit)="submitReg()">
+      <div class="form-item">
+        <label for="user-email">Введите email</label>
+        <input type="text" formControlName="email" id="user-email">
+        <span class="error" *ngIf="this.regForm.get('email')?.invalid && this.regForm.get('email')?.touched">
+          Некорректная почта email
+        </span>
+      </div>
+      <div class="form-item">
+        <label for="user-name">Введите имя</label>
+        <input type="text" formControlName="name" id="user-name">
+        <span class="error" *ngIf="this.regForm.get('name')?.invalid && this.regForm.get('name')?.touched">
+          Слишком короткое имя
+        </span>
+      </div>
+      <div class="form-item">
+        <label for="user-date-of-birth">Введите дату рождения</label>
+        <input type="text" formControlName="date_of_birth" id="user-date-of-birth">
+        <span class="error" *ngIf="this.regForm.get('date-of-birth')?.invalid && this.regForm.get('date-of-birth')?.touched">
+          Некорректная дата рождения
+        </span>
+      </div>
+      <div class="form-item">
+        <label for="password">Введите пароль</label>
+        <input type="password" formControlName="password" id="password"/>
+        <span class="error" *ngIf="this.regForm.get('password')?.invalid && this.regForm.get('password')?.touched">
+          Должен состоять только из цифр и латинских букв (минимальная длина: 8 символов)
+        </span>
+      </div>
+      <div>
+        <button class="submitButton" type="submit" [disabled]="regForm.invalid">
+          Зарегистрироваться
+        </button>
+
+      </div>
+    </form>
+    <a href ="/login">
+      <button class="switchToRegistrationButton">
+        Вход
+      </button>
+    </a>
+  </div>
+</section>

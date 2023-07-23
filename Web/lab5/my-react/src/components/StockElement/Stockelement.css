@@ -1,0 +1,28 @@
+
+.stock_element{
+    background: #880C31;
+    font-family: Verdana;
+    color: #F8FAC8;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.Stock__checkbox{
+    width: auto;
+}
+
+.check_box{
+    height: 20px;
+
+}
+
+
+.history_btn{
+    color: #F8FAC8;
+}
+
+.history_btn:hover{
+    color: teal;
+}

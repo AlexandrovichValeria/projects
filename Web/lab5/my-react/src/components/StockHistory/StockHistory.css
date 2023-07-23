@@ -1,0 +1,34 @@
+.stock_name{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Verdana;
+    color: #F8FAC8;
+    font-size: 20px;
+    background: teal;
+}
+
+.chart-data{
+    background: #F8FAC8;
+}
+
+.table_div{
+    margin-top: 50px;
+    width: 100%;
+}
+.history_table{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #F8FAC8;
+    font-family: Verdana;
+    color: teal;
+    font-size: 20px;
+}
+
+tr, th{
+    border: 2px solid teal;
+    padding: 5px;
+}

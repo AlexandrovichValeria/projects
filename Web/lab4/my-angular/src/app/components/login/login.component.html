@@ -1,0 +1,36 @@
+<section class="login">
+  <div class="container">
+    <div class="header">
+      <h2>Вход</h2>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="submitLogin()">
+      <div class="form-item">
+        <label for="user-email">Введите email</label>
+        <br>
+        <input type="text" formControlName="email" id="user-email">
+        <span class="error" *ngIf="this.loginForm.get('email')?.invalid && this.loginForm.get('email')?.touched">
+          Некорректная почта email
+        </span>
+      </div>
+      <div class="form-item">
+        <label for="password">Введите пароль</label>
+        <br>
+        <input type="password" formControlName="password" id="password"/>
+        <span class="error" *ngIf="this.loginForm.get('password')?.invalid && this.loginForm.get('password')?.touched">
+          Должен состоять только из цифр и латинских букв (минимальная длина: 8 символов)
+        </span>
+      </div>
+      <div>
+        <button [disabled]="loginForm.invalid" class="submitButton" type="submit">
+          Войти
+        </button>
+      </div>
+
+    </form>
+      <a href = "/registration">
+        <button class="switchToRegistrationButton">
+          Регистрация
+        </button>
+      </a>
+  </div>
+</section>

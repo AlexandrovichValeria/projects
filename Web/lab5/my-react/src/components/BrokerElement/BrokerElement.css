@@ -1,0 +1,41 @@
+.broker_element{
+    background: #880C31;
+    font-family: Verdana;
+    color: #F8FAC8;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+input {
+    margin-top: 20px;
+    border: 2px solid #F8FAC8;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+
+button {
+    background: #E6992D;
+    color: #F8FAC8;
+
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+
+    font-family: Verdana;
+    width: 200px;
+}
+
+button:hover{
+    background: teal;
+}
+
+.BrokerItem__save-button{
+    margin-bottom: 10px;
+}

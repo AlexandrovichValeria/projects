@@ -1,0 +1,99 @@
+{
+  "userList": [
+    {
+      "id": "1",
+      "name": "AAA AAA",
+      "date_of_birth": "01-01-1800",
+      "email": "test1@gmail.com",
+      "role": "Пользователь",
+      "status": "Активный",
+      "friends": [
+        "2",
+        "4",
+        "6",
+        "7"
+      ],
+      "password": "1111111q"
+    },
+    {
+      "id": "2",
+      "name": "BBB BBB",
+      "date_of_birth": "02-02-1801",
+      "email": "test2@gmail.com",
+      "role": "Администратор",
+      "status": "Активный",
+      "friends": [
+        "1",
+        "3",
+        "4",
+        "5"
+      ],
+      "password": "2222222q"
+    },
+    {
+      "id": "3",
+      "name": "CCC CCC",
+      "date_of_birth": "03-03-1802",
+      "email": "test3@gmail.com",
+      "role": "Пользователь",
+      "status": "Заблокированный",
+      "friends": [
+        "2"
+      ],
+      "password": "3333333q"
+    },
+    {
+      "id": "4",
+      "name": "DDD DDD",
+      "date_of_birth": "04-04-1803",
+      "email": "test4@gmail.com",
+      "role": "Пользователь",
+      "status": "Не подтвержденный",
+      "friends": [
+        "1",
+        "2"
+      ],
+      "password": "4444444q"
+    },
+    {
+      "id": "5",
+      "name": "EEE EEE",
+      "date_of_birth": "05-05-1804",
+      "email": "test5@gmail.com",
+      "role": "Администратор",
+      "status": "Активный",
+      "friends": [
+        "2",
+        "7"
+      ],
+      "password": "5555555q"
+    },
+    {
+      "id": "6",
+      "name": "FFF FFF",
+      "date_of_birth": "06-06-1805",
+      "email": "test6@gmail.com",
+      "role": "Пользователь",
+      "status": "Заблокированный",
+      "friends": [
+        "1",
+        "7"
+      ],
+      "password": "6666666q"
+    },
+    {
+      "id": "7",
+      "name": "GGG GGG",
+      "date_of_birth": "07-07-1806",
+      "email": "test7@gmail.com",
+      "role": "Пользователь",
+      "status": "Активный",
+      "friends": [
+        "1",
+        "5",
+        "6"
+      ],
+      "password": "7777777q"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+.market_settings {
+    height: 100%;
+    color: #05386B;
+}
+
+.StockMarketTable{
+    height: 100%;
+}
+
+.biddings_data{
+    background: #F8FAC8;
+}
+
+.bidding-section {
+
+    width: 50vw;
+    margin: 0 auto;
+
+}
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: rgb(63, 63, 63);
+    box-sizing: border-box;
+}
+
+button {
+
+    background: #E6992D;
+    color: #F8FAC8;
+
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+.stock_exchange_rate{
+    color: #F8FAC8;
+    font-size: 25px;
+}
+.text_label{
+    color: #F8FAC8;
+    font-size: 25px;
+}

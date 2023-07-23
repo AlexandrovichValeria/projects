@@ -1,0 +1,13 @@
+  <section id="user_list">
+    <p id="main_header">Список пользователей</p>
+
+    <button class = "exit" (click) = "exit()">Выйти</button>
+
+    <div class = "user_div_table">
+      <app-user-table-element *ngFor="let user of user_list" [user] = "user">
+      </app-user-table-element>
+    </div>
+  </section>
+
+
+

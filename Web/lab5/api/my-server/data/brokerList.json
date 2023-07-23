@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "AAA AAA",
+    "money_amount": 1000
+  },
+  {
+    "id": "2",
+    "name": "BBB BBB",
+    "money_amount": 2000
+  },
+  {
+    "id": "3",
+    "name": "CCC CCC",
+    "money_amount": 3000
+  },
+  {
+    "id": "4",
+    "name": "DDD DDD",
+    "money_amount": 4000
+  },
+  {
+    "id": "5",
+    "name": "EEE EEE",
+    "money_amount": 5000
+  },
+  {
+    "id": "6",
+    "name": "FFF FFF",
+    "money_amount": 6000
+  }
+]

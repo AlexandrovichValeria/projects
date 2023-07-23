@@ -1,0 +1,21 @@
+<div class = "user-table-element">
+  <tr>
+    <td>
+      <img class = "user_photo" src = "{{img_dir}}" alt = "" onerror="this.onerror=null;this.src='/assets/images/user-secret-solid.png';" width = "170px">
+
+    </td>
+    <td class = "info_col">
+      <p class = "user_name">{{user.name}}</p>
+      <p>Дата рождения: {{user.date_of_birth}}</p>
+      <p>Email: {{user.email}}</p>
+      <p>Роль: {{user.role}}</p>
+      <p>Статус: {{user.status}}</p>
+    </td>
+    <td class = "delete_btn-col">
+        <button class="delete_friend_btn" type="button" (click)="deleteFriend()">
+          Удалить друга
+          <!--img src = "/assets/images/pen-solid.png" alt = "" class = "edit_icon" width= "30px"-->
+        </button>
+    </td>
+  </tr>
+</div>

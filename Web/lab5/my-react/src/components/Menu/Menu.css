@@ -1,0 +1,25 @@
+/*@color_1: #880c31;
+@color_2: #b84212;
+@color_3: #e6992d;
+@color_4: #f8fac8;*/
+
+.Links {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #880c31;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.link {
+    font-family: Verdana;
+    font-style: normal;
+   color: #f8fac8;
+   text-decoration: none;
+   margin-right: 40px;
+   font-size:  25px;
+   font-weight: bold;
+ }

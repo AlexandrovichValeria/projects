@@ -1,0 +1,18 @@
+<div class = "news-element">
+  <tr>
+    <td>
+      <img class = "user_photo" src = "{{img_dir}}" alt = "" width = "150px">
+    </td>
+    <td class = "content_col">
+      <ng-container *ngIf="news_user">
+      <p class = "user_name">Пользователь {{news_user.name}} пишет:</p>
+      </ng-container>
+      <p>{{news.content}}</p>
+    </td>
+    <!--td>
+      <a href = "/user/messenger/{{news_user.id}}">
+        <button class="messenger_btn" type = "button">Сообщение</button>
+      </a>
+    </td-->
+  </tr>
+</div>

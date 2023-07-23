@@ -1,0 +1,11 @@
+<section class="friend_list">
+  <p id = "main_header">Список друзей</p>
+  <p id = "user_name">Пользователь: {{curUser.name}}</p>
+  <a href = "/user/timeline">
+    <button class = "exit">Назад</button>
+  </a>
+  <div class = "user_div_table">
+    <app-friend-element *ngFor="let user of friend_list" [user] = "user" [main_user] = "curUser">
+    </app-friend-element>
+  </div>
+</section>

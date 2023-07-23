@@ -1,0 +1,24 @@
+.brokers{
+
+    margin-top: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    border-radius: 10px;
+}
+
+.new_broker{
+    margin-top: 50px;
+}
+
+.new_broker, .change_money_label{
+    font-family: Verdana;
+    color: #F8FAC8;
+    font-size: 20px;
+}
+
+.new_broker_btn{
+    background: #880C31;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

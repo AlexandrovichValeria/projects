@@ -1,0 +1,42 @@
+<section class="timeline">
+  <div class = "user_info">
+    <tr>
+      <td>
+    <img class = "user_photo" src = "{{img_dir}}" alt = "" onerror="this.onerror=null;this.src='/assets/images/user-secret-solid.png';" width = "140px">
+      </td>
+      <td class = "user_info_col">
+        <p id = "user_name_header" class = "info_text">{{user.name}}</p>
+        <p class = "info_text">Дата рождения: {{user.date_of_birth}}</p>
+        <p class = "info_text">Email: {{user.email}}</p>
+        <p class = "info_text">Роль: {{user.role}}</p>
+        <p class = "info_text">Статус: {{user.status}}</p>
+        <a href = "/user/add_news">
+          <button class="add_news_btn" type="button"> Добавить новость
+            <img src = "/assets/images/pen-solid.png" alt = "" class = "news_icon" width= "25px">
+          </button>
+        </a>
+        <a href = "/user/friend_list">
+          <button class="friend_list_btn" type="button"> Список друзей
+            <img src = "/assets/images/user-group-solid.svg" alt = "" class = "news_icon" width= "25px">
+          </button>
+        </a>
+        <button class = "exit_btn" (click) = "exit()">Выйти
+          <img src = "/assets/images/door-open-solid.svg" alt = "" class = "news_icon" width= "25px">
+        </button>
+
+      </td>
+    </tr>
+  </div>
+
+  <div class ="add_padding">
+  <div class = "news_container">
+    <p id = "cont_header"> Лента новостей</p>
+    <table id = "news_table">
+      <app-news-element *ngFor="let news of news" [news] = "news">
+
+      </app-news-element>
+    </table>
+
+  </div>
+  </div>
+</section>

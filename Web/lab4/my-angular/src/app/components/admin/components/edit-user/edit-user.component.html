@@ -1,0 +1,62 @@
+<section class = "edit_user_section">
+  <div class="container">
+  <p id="user_header">Изменение данных о пользователе</p>
+    <ng-container *ngIf="user">
+      <p id="user_name_to_insert">{{user.name}}</p>
+    </ng-container>
+  <form [formGroup]="userEditForm" (ngSubmit)="submitUserEdit()">
+    <div class="div" id="user_info">
+      <div class="row">
+        <label>ФИО:</label>
+      </div>
+      <div class="row">
+        <ng-container *ngIf="user">
+          <input type="text" formControlName="name" id="name" placeholder="{{user.name}}">
+        </ng-container>
+      </div>
+      <div class="row">
+        <label>Дата рождения:</label>
+      </div>
+      <div class="row">
+        <ng-container *ngIf="user">
+          <input type="text" formControlName="date_of_birth" id="date" placeholder="{{user.date_of_birth}}">
+        </ng-container>
+      </div>
+      <div class="row">
+        <label>email:</label>
+      </div>
+      <div class="row">
+        <ng-container *ngIf="user">
+          <input type="text" formControlName="email" id="email" placeholder="{{user.email}}">
+        </ng-container>
+      </div>
+      <div class="row">
+        <label>Роль пользователя:</label>
+      </div>
+      <div class="row">
+      <select formControlName="role" id="role_option" size="1">
+        <!--option value="role_none">Без изменений</option-->
+        <option value="Пользователь">Пользователь</option>
+        <option value="Администратор">Администратор</option>
+      </select>
+    </div>
+      <div class="row">
+        <label>Статус пользователя:</label>
+      </div>
+      <div class="row">
+        <select formControlName="status" id="status_option" size="1">
+          <!--option value="status_none">Без изменений</option-->
+          <option value="Активный">Активный</option>
+          <option value="Не подтвержденный">Не подтвержденный</option>
+          <option value="Заблокированный">Заблокированный</option>
+        </select>
+      </div>
+    </div>
+    <button [disabled]="userEditForm.invalid" class="confirm_change_btn">ОК</button>
+
+  </form>
+    <a href = "/admin">
+      <button class="deny_change_btn">Отмена</button>
+    </a>
+  </div>
+</section>
